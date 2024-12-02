@@ -4,13 +4,19 @@ package davidwong.example.weatherui
 data class WeatherResponse(
     val weather: List<WeatherDescription>,
     val main: Main,
-    val name: String // City name
+    val name: String, // City name
+ //   val wind: Wind
 )
 
 data class WeatherDescription(
-    val description: String
+    val description: String // description (e.g, sunny, rainy, cloudy)
 )
 
 data class Main(
-    val temp: Float
+    val temp: Float, // temp
+
+) /*
+data class Wind(
+    val speed: Float
 )
+ */
